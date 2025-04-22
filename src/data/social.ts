@@ -4,25 +4,25 @@ export const socialLinks: SocialLink[] = [
   {
     id: 1,
     name: "GitHub",
-    url: "https://github.com/yourusername",
+    url: "https://github.com/manitejagaddam",
     icon: "Github"
   },
   {
     id: 2,
     name: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://www.linkedin.com/in/maniteja-gaddam-354345245/",
     icon: "Linkedin"
   },
   {
     id: 3,
     name: "Twitter",
-    url: "https://twitter.com/yourusername",
+    url: "https://x.com/ManitejaG1107",
     icon: "Twitter"
   },
   {
     id: 4,
     name: "Instagram",
-    url: "https://instagram.com/yourusername",
+    url: "https://instagram.com/maniteja_gaddam_",
     icon: "Instagram"
   }
 ];
