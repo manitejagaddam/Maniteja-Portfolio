@@ -67,12 +67,13 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             {/* Radial glow background */}
+
             <div className="absolute inset-0 flex items-center justify-center z-0">
-              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-purple-600 opacity-30 blur-3xl group-hover:opacity-50 transition-all duration-500"></div>
+              <div className="w-96 h-96 md:w-[500px] md:h-[500px] rounded-full bg-purple-600 opacity-20 blur-[220px] group-hover:opacity-40 transition-all duration-500"></div>
             </div>
 
             {/* Profile image with hover effects */}
-            <div className="relative w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg z-10 transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl">
+            <div className="relative w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg z-10 transition-all duration-500 transform group-hover:scale-125 group-hover:shadow-2xl">
               <img
                 src={maniteja}
                 alt="Maniteja Gaddam"
