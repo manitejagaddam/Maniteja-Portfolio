@@ -1,16 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
 import ProjectCard from '../ui/ProjectCard';
 import { projects } from '../../data/projects';
 
 const Projects: React.FC = () => {
-  const categories = ['All', ...new Set(projects.map(project => project.category))];
-  const [activeCategory, setActiveCategory] = useState('All');
+  const categories = ['All', ...new Set(projects.flatMap(project => project.category))];
+
+  // Initialize activeCategory with the first category that isn't "All"
+  const [activeCategory, setActiveCategory] = useState(() => categories[1]);
 
   const filteredProjects = activeCategory === 'All'
     ? projects
-    : projects.filter(project => project.category === activeCategory);
+    : projects.filter(project => project.category.includes(activeCategory));
+
+  useEffect(() => {
+    // If activeCategory is set to 'All' and the filteredProjects length is zero, set activeCategory to the first category.
+    if (activeCategory === 'All' && filteredProjects.length === 0) {
+      setActiveCategory(categories[1]);
+    }
+  }, [activeCategory, filteredProjects, categories]);
 
   return (
     <section id="projects" className="py-20 relative z-10">
