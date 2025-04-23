@@ -22,7 +22,7 @@ const StarryBackground: React.FC = () => {
 
     // Star properties
     const stars: { x: number; y: number; radius: number; opacity: number; speed: number }[] = [];
-    const starCount = Math.floor(canvas.width * canvas.height / 8000);
+    const starCount = Math.floor(canvas.width * canvas.height / 5000);
 
     // Initialize stars
     for (let i = 0; i < starCount; i++) {
@@ -31,7 +31,7 @@ const StarryBackground: React.FC = () => {
         y: Math.random() * canvas.height,
         radius: Math.random() * 1.5,
         opacity: Math.random(),
-        speed: 0.1 + Math.random() * 0.2
+        speed: 0.1 + Math.random() * 0.5
       });
     }
 

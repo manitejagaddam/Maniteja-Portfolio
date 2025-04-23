@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <section id="projects" className="py-20 bg-gray-950 relative z-10">
+    <section id="projects" className="py-20 relative z-10">
       <div className="container mx-auto px-4">
         <SectionTitle 
           title="My Projects"

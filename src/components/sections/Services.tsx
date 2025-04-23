@@ -5,7 +5,7 @@ import { services } from '../../data/services';
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-20 bg-black relative z-10">
+    <section id="services" className="py-20 relative z-10">
       <div className="container mx-auto px-4">
         <SectionTitle 
           title="My Services"
