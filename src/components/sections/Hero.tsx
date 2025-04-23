@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowDownCircle } from "lucide-react";
 import SocialIcon from "../ui/SocialIcon";
 import { socialLinks } from "../../data/social";
-import maniteja from "../../assets/mani.jpg";
+import maniteja from "/mani.jpg";
 
 const Hero: React.FC = () => {
   return (
