@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowDownCircle } from "lucide-react";
 import SocialIcon from "../ui/SocialIcon";
 import { socialLinks } from "../../data/social";
-import maniteja from "/mani.jpg";
+import maniteja from "/maniteja.jpg";
 
 const Hero: React.FC = () => {
   return (
@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Profile image with hover effects */}
-            <div className="relative w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg z-10 transition-all duration-500 transform group-hover:scale-125 group-hover:shadow-2xl">
+            <div className="relative w-80 scale-125 h-80 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg z-10 transition-all duration-500 transform group-hover:scale-150 group-hover:shadow-2xl">
               <img
                 src={maniteja}
                 alt="Maniteja Gaddam"
