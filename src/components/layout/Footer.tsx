@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="text-xl font-bold text-white mb-2">
-              <span className="text-purple-500">Dev</span>Portfolio
+              <span className="text-purple-500">GMT</span>Portfolio
             </h3>
             <p className="text-gray-400 text-sm">
               Building digital experiences that matter.

@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="text-purple-500">GMT </span>Portfolio
+          <span className="text-purple-500">GMT</span>Portfolio
         </motion.a>
 
         {/* Desktop Navigation */}
