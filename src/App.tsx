@@ -16,20 +16,38 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-black text-white min-h-screen relative">
+    // <div className="bg-black text-white min-h-screen ">
+    //   <StarryBackground />
+    //   <CustomCursor />
+      
+    //   <Header />
+      
+    //   <main>
+    //     <Hero />
+    //     <About />
+    //     <Projects />
+    //     <Services />
+    //     <Contact />
+    //   </main>
+      
+    //   <Footer />
+    // </div>
+
+    <div className="bg-black text-white min-h-screen flex flex-col relative">
       <StarryBackground />
       <CustomCursor />
-      
+
       <Header />
-      
-      <main>
+
+      {/* Main content should grow to fill space */}
+      <main className="flex-grow">
         <Hero />
         <About />
         <Projects />
         <Services />
         <Contact />
       </main>
-      
+
       <Footer />
     </div>
   );

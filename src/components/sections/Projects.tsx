@@ -7,15 +7,14 @@ import { projects } from '../../data/projects';
 const Projects: React.FC = () => {
   const categories = ['All', ...new Set(projects.flatMap(project => project.category))];
 
-  // Initialize activeCategory with the first category that isn't "All"
-  const [activeCategory, setActiveCategory] = useState(() => categories[1]);
+  const [activeCategory, setActiveCategory] = useState("All");
+
 
   const filteredProjects = activeCategory === 'All'
     ? projects
     : projects.filter(project => project.category.includes(activeCategory));
 
   useEffect(() => {
-    // If activeCategory is set to 'All' and the filteredProjects length is zero, set activeCategory to the first category.
     if (activeCategory === 'All' && filteredProjects.length === 0) {
       setActiveCategory(categories[1]);
     }

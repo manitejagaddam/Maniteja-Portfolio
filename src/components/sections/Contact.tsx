@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, MapPin, Phone } from "lucide-react";
@@ -39,7 +38,6 @@ const Contact: React.FC = () => {
     const whatsAppURL = `https://wa.me/919494785078?text=${encodeURIComponent(
       whatsAppMessage
     )}`;
-
 
     window.open(whatsAppURL, "_blank");
 

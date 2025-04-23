@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, Menu } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, Menu } from "lucide-react";
 
 const navItems = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Services', href: '#services' },
-  { name: 'Contact', href: '#contact' },
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Projects", href: "#projects" },
+  { name: "Services", href: "#services" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const Header: React.FC = () => {
@@ -24,22 +24,22 @@ const Header: React.FC = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const headerClasses = scrolled
-    ? 'bg-gray-900/95 backdrop-blur-md shadow-lg'
-    : 'bg-transparent';
+    ? "bg-gray-900/95 backdrop-blur-md shadow-lg"
+    : "bg-transparent";
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerClasses}`}
     >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <motion.a 
+        <motion.a
           href="#home"
           className="text-xl font-bold text-white"
           initial={{ opacity: 0 }}
@@ -89,7 +89,7 @@ const Header: React.FC = () => {
           <motion.div
             className="fixed inset-0 top-14 bg-gray-900 z-40 md:hidden"
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: '100vh' }}
+            animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >

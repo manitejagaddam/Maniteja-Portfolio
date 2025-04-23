@@ -1,19 +1,19 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ChevronUp } from 'lucide-react';
-import SocialIcon from '../ui/SocialIcon';
-import { socialLinks } from '../../data/social';
+import React from "react";
+import { motion } from "framer-motion";
+import { ChevronUp } from "lucide-react";
+import SocialIcon from "../ui/SocialIcon";
+import { socialLinks } from "../../data/social";
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
-    <footer className="bg-gray-900 border-t border-gray-800">
+    <footer className="bg-transparent border-t z-10 border-gray-800">
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <motion.div
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            © {new Date().getFullYear()} All rights reserved.
+            Made with ❤️ by Maniteja
           </motion.p>
 
           <motion.button
